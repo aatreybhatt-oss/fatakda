@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 95.0, 968.0, 853.0 ],
+        "rect": [ 33.0, 95.0, 1444.0, 853.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -272,17 +272,6 @@
             },
             {
                 "box": {
-                    "id": "obj-2",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "bang" ],
-                    "patching_rect": [ 1515.0, 8.0, 126.0, 22.0 ],
-                    "text": "metro 1000 @active 1"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-157",
                     "maxclass": "message",
                     "numinlets": 2,
@@ -290,17 +279,6 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 1413.0, 235.0, 29.5, 22.0 ],
                     "text": "-70"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-159",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1480.0, 45.0, 29.5, 22.0 ],
-                    "text": "1"
                 }
             },
             {
@@ -791,7 +769,7 @@
                 "box": {
                     "hint": "Select Audio input device",
                     "id": "obj-116",
-                    "items": [ "None", ",", "System Device: MacBook Pro Microphone", ",", "Preference: LoopBack (BlackHole), Current: MacBook Pro Microphone", ",", "Elgato Wave Link Chat Mix", ",", "Elgato Wave Link Personal Mix", ",", "Elgato Wave Link Stream Mix", ",", "Elgato Wave Link LoopBack (BlackHole)", ",", "BlackHole 2ch", ",", "MacBook Pro Microphone", ",", "aatre’s iPhone Microphone", ",", "Pro Tools Audio Bridge 16", ",", "Pro Tools Audio Bridge 2-A", ",", "Pro Tools Audio Bridge 2-B", ",", "Pro Tools Audio Bridge 32", ",", "Pro Tools Audio Bridge 64", ",", "Pro Tools Audio Bridge 6", ",", "Steam Streaming Microphone", ",", "Steam Streaming Speakers", ",", "Pro Tools Aggregate I/O", ",", "ZoomAudioDevice" ],
+                    "items": [ "None", ",", "System Device: MacBook Pro Microphone", ",", "Elgato Wave Link Chat Mix", ",", "Elgato Wave Link Personal Mix", ",", "Elgato Wave Link Stream Mix", ",", "Elgato Wave Link LoopBack (BlackHole)", ",", "BlackHole 2ch", ",", "MacBook Pro Microphone", ",", "aatre’s iPhone Microphone", ",", "Pro Tools Audio Bridge 16", ",", "Pro Tools Audio Bridge 2-A", ",", "Pro Tools Audio Bridge 2-B", ",", "Pro Tools Audio Bridge 32", ",", "Pro Tools Audio Bridge 64", ",", "Pro Tools Audio Bridge 6", ",", "Steam Streaming Microphone", ",", "Steam Streaming Speakers", ",", "Pro Tools Aggregate I/O", ",", "ZoomAudioDevice" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1545,7 +1523,7 @@
                     "autopopulate": 1,
                     "hint": "Select image from folder",
                     "id": "obj-101",
-                    "items": "<empty>",
+                    "items": [ "1280x720Blank.png", ",", "Bpm&Transients.maxpat", ",", "BrCoSa.maxpat", ",", "Fatakda_MultiTrack.maxpat", ",", "Fatakda_Stereo.maxpat", ",", "FatakdaVideo_Stereo.maxpat", ",", "Gen-LavaLamp.maxpat", ",", "Gen-LavaLampNOVZ.maxpat" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -4301,7 +4279,7 @@
             },
             {
                 "box": {
-                    "addpoints": [ 0.0, 0.0, 0, 206.31429048055224, 1.0, 0, 422.15801591844024, 0.0, 0 ],
+                    "addpoints": [ 0.0, 0.0, 0, 168.21162993793013, 1.0, 0, 422.1504450776605, 0.0, 0 ],
                     "classic_curve": 1,
                     "domain": 423.11700439453125,
                     "id": "obj-11",
@@ -6670,12 +6648,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-159", 0 ],
-                    "source": [ "obj-2", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-266", 0 ],
                     "source": [ "obj-201", 0 ]
                 }
@@ -7743,13 +7715,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-157", 0 ],
-                    "order": 2,
-                    "source": [ "obj-86", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-159", 0 ],
                     "order": 1,
                     "source": [ "obj-86", 0 ]
                 }
@@ -7757,7 +7722,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-85", 0 ],
-                    "order": 3,
+                    "order": 2,
                     "source": [ "obj-86", 0 ]
                 }
             },
