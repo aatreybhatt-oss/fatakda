@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 33.0, 95.0, 1444.0, 853.0 ],
+        "rect": [ 34.0, 95.0, 1444.0, 853.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -849,7 +849,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 348.051944732666, 170.12986850738525, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 325.4285726547241, 146.0, 105.0, 20.0 ],
+                    "presentation_rect": [ 325.0, 76.0, 105.0, 20.0 ],
                     "text": "Background Color"
                 }
             },
@@ -864,7 +864,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 463.0, 347.5256841182709, 128.0, 32.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 313.4285726547241, 38.0, 128.57142734527588, 103.85714149475098 ],
+                    "presentation_rect": [ 313.0, 38.0, 129.0, 56.0 ],
                     "saturation": 1.0
                 }
             },
@@ -1523,7 +1523,7 @@
                     "autopopulate": 1,
                     "hint": "Select image from folder",
                     "id": "obj-101",
-                    "items": [ "1280x720Blank.png", ",", "Bpm&Transients.maxpat", ",", "BrCoSa.maxpat", ",", "Fatakda_MultiTrack.maxpat", ",", "Fatakda_Stereo.maxpat", ",", "FatakdaVideo_Stereo.maxpat", ",", "Gen-LavaLamp.maxpat", ",", "Gen-LavaLampNOVZ.maxpat" ],
+                    "items": "<empty>",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1630,8 +1630,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 463.0, 541.4285843372345, 138.0, 22.0 ],
-                    "text": "1. 0.950692 0.117648 1."
+                    "patching_rect": [ 463.0, 541.4285843372345, 59.0, 22.0 ],
+                    "text": "1. 0. 0. 1."
                 }
             },
             {
@@ -1641,8 +1641,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 342.051944732666, 541.4285843372345, 112.0, 22.0 ],
-                    "text": "0.876 0.24 0.136 1,"
+                    "patching_rect": [ 342.051944732666, 541.4285843372345, 59.0, 22.0 ],
+                    "text": "1. 1. 0. 1."
                 }
             },
             {
@@ -4279,9 +4279,9 @@
             },
             {
                 "box": {
-                    "addpoints": [ 0.0, 0.0, 0, 168.21162993793013, 1.0, 0, 422.1504450776605, 0.0, 0 ],
+                    "addpoints": [ 0.0, 0.0, 0, 175.40769110061316, 1.0, 0, 422.1157971023221, 0.0, 0 ],
                     "classic_curve": 1,
-                    "domain": 423.11700439453125,
+                    "domain": 423.1012268066406,
                     "id": "obj-11",
                     "maxclass": "function",
                     "numinlets": 1,
@@ -4318,7 +4318,9 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 2073.154100497564, 866.6666738986969, 184.0, 68.0 ]
+                    "patching_rect": [ 2073.154100497564, 866.6666738986969, 184.0, 68.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 312.3287444114685, 93.1506781578064, 129.6712555885315, 75.34246027469635 ]
                 }
             },
             {
@@ -8065,14 +8067,6 @@
             "obj-28::obj-5": [ "live.dial[13]", "sensitivity", 0 ],
             "obj-28::obj-56": [ "live.gain~[5]", "live.gain~", 0 ],
             "obj-6": [ "live.gain~", "live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-16::obj-11::obj-91::obj-10::obj-11": {
                     "parameter_longname": "Jitter[26]"
