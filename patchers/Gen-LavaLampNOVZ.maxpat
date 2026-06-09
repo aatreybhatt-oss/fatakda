@@ -14,6 +14,67 @@
         "boxes": [
             {
                 "box": {
+                    "bubble": 1,
+                    "bubbleside": 3,
+                    "bubbletextmargin": 3,
+                    "id": "obj-106",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 115.17240589857101, 219.31032979488373, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 72.33333548903465, 112.0, 92.41378676891327, 20.0 ],
+                    "text": "NoiseShape"
+                }
+            },
+            {
+                "box": {
+                    "bubble": 1,
+                    "bubbletextmargin": 3,
+                    "id": "obj-105",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 115.86206102371216, 220.68964004516602, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 57.66666838526726, 112.0, 92.41378676891327, 20.0 ],
+                    "text": "NoiseShape"
+                }
+            },
+            {
+                "box": {
+                    "floatoutput": 1,
+                    "hint": "Select Noise function",
+                    "id": "obj-102",
+                    "maxclass": "dial",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "float" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 283.8383699655533, 333.7349520921707, 40.0, 40.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 17.0, 102.0, 40.0, 40.0 ],
+                    "size": 1.0
+                }
+            },
+            {
+                "box": {
+                    "floatoutput": 1,
+                    "hint": "Select Noise function",
+                    "id": "obj-97",
+                    "maxclass": "dial",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "float" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 787.878749370575, 180.80807197093964, 40.0, 40.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 168.0, 102.0, 40.0, 40.0 ],
+                    "size": 1.0
+                }
+            },
+            {
+                "box": {
                     "comment": "",
                     "id": "obj-81",
                     "index": 0,
@@ -1722,21 +1783,7 @@
             },
             {
                 "box": {
-                    "bubble": 1,
-                    "fontname": "Arial",
-                    "fontsize": 13.0,
-                    "id": "obj-34",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 909.6385878324509, 332.53013277053833, 94.0, 25.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 88.0, 111.0, 94.0, 25.0 ],
-                    "text": "PsychDrive"
-                }
-            },
-            {
-                "box": {
+                    "hint": "Randomize Colors",
                     "id": "obj-10",
                     "maxclass": "toggle",
                     "numinlets": 1,
@@ -1745,7 +1792,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 881.927743434906, 333.7349520921707, 20.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 61.0, 112.0, 20.0, 20.0 ]
+                    "presentation_rect": [ 289.8989757299423, 114.14140856266022, 20.0, 20.0 ]
                 }
             },
             {
@@ -2885,6 +2932,12 @@
                 "patchline": {
                     "destination": [ "obj-12", 0 ],
                     "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-11", 0 ],
+                    "source": [ "obj-102", 0 ]
                 }
             },
             {
@@ -4097,6 +4150,12 @@
                     "destination": [ "obj-91", 2 ],
                     "source": [ "obj-96", 0 ]
                 }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-97", 0 ]
+                }
             }
         ],
         "parameters": {
@@ -4358,14 +4417,6 @@
             "obj-93::obj-91::obj-9::obj-11": [ "Jitter[21]", "Jitter", 0 ],
             "obj-93::obj-91::obj-9::obj-16": [ "Shading[2]", "Shading", 0 ],
             "obj-93::obj-96": [ "pictctrl[74]", "pictctrl[1]", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-11::obj-91::obj-10::obj-11": {
                     "parameter_longname": "Jitter[2]"
