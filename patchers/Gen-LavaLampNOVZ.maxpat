@@ -2764,7 +2764,7 @@
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 489.2857096195221, 207.14285516738892, 128.0, 128.0 ],
+                    "patching_rect": [ 1004.0, 106.0, 128.0, 128.0 ],
                     "presentation": 1,
                     "presentation_rect": [ -1.0, 1.0, 462.8205713033676, 148.7179675102234 ],
                     "proportion": 0.5
@@ -4417,6 +4417,14 @@
             "obj-93::obj-91::obj-9::obj-11": [ "Jitter[21]", "Jitter", 0 ],
             "obj-93::obj-91::obj-9::obj-16": [ "Shading[2]", "Shading", 0 ],
             "obj-93::obj-96": [ "pictctrl[74]", "pictctrl[1]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-11::obj-91::obj-10::obj-11": {
                     "parameter_longname": "Jitter[2]"
