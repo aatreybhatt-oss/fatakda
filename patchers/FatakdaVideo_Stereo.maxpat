@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 95.0, 1435.0, 766.0 ],
+        "rect": [ 34.0, 95.0, 968.0, 853.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -47,7 +47,7 @@
             },
             {
                 "box": {
-                    "hint": "Set render window to 1280x720",
+                    "hint": "Set render window to 644x360",
                     "id": "obj-196",
                     "maxclass": "message",
                     "numinlets": 2,
@@ -311,7 +311,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1536.0, 56.0, 24.0, 24.0 ]
+                    "patching_rect": [ 1543.5899386405945, 74.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -791,7 +791,7 @@
                 "box": {
                     "hint": "Select Audio input device",
                     "id": "obj-116",
-                    "items": [ "None", ",", "System Device: MacBook Pro Microphone", ",", "Chat Mix", ",", "Personal Mix", ",", "Stream Mix", ",", "LoopBack (BlackHole)", ",", "BlackHole 2ch", ",", "MacBook Pro Microphone", ",", "aatre’s iPhone Microphone", ",", "Pro Tools Audio Bridge 16", ",", "Pro Tools Audio Bridge 2-A", ",", "Pro Tools Audio Bridge 2-B", ",", "Pro Tools Audio Bridge 32", ",", "Pro Tools Audio Bridge 64", ",", "Pro Tools Audio Bridge 6", ",", "Steam Streaming Microphone", ",", "Steam Streaming Speakers", ",", "Pro Tools Aggregate I/O", ",", "ZoomAudioDevice" ],
+                    "items": [ "None", ",", "System Device: MacBook Pro Microphone", ",", "Preference: LoopBack (BlackHole), Current: MacBook Pro Microphone", ",", "Elgato Wave Link Chat Mix", ",", "Elgato Wave Link Personal Mix", ",", "Elgato Wave Link Stream Mix", ",", "Elgato Wave Link LoopBack (BlackHole)", ",", "BlackHole 2ch", ",", "MacBook Pro Microphone", ",", "aatre’s iPhone Microphone", ",", "Pro Tools Audio Bridge 16", ",", "Pro Tools Audio Bridge 2-A", ",", "Pro Tools Audio Bridge 2-B", ",", "Pro Tools Audio Bridge 32", ",", "Pro Tools Audio Bridge 64", ",", "Pro Tools Audio Bridge 6", ",", "Steam Streaming Microphone", ",", "Steam Streaming Speakers", ",", "Pro Tools Aggregate I/O", ",", "ZoomAudioDevice" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1545,14 +1545,14 @@
                     "autopopulate": 1,
                     "hint": "Select image from folder",
                     "id": "obj-101",
-                    "items": [ "Burnout.jpg", ",", "Elements.jpg", ",", "Faith.jpg", ",", "FeverDream.jpg", ",", "FillerEpisode.jpg", ",", "Kontrast.jpg", ",", "Noodles.jpg", ",", "PartyOfTwo.jpg", ",", "PerpetualLeycocholy.jpg", ",", "SerengetiSunrise.jpg", ",", "StrangePlanet.jpg", ",", "Waltz&More.jpg" ],
+                    "items": "<empty>",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 1052.9354991912842, 530.9859224557877, 100.0, 22.0 ],
-                    "prefix": "~/Pictures/AatreyAlbumArt/",
+                    "prefix": "~/Documents/GitHub/fatakda/patchers/",
                     "presentation": 1,
                     "presentation_rect": [ 763.3802917003632, 200.60563337802887, 100.0, 22.0 ]
                 }
@@ -4301,9 +4301,9 @@
             },
             {
                 "box": {
-                    "addpoints": [ 0.0, 0.0, 0, 33.78916804365835, 1.0, 0, 272.43001225415566, 0.0, 0 ],
+                    "addpoints": [ 0.0, 0.0, 0, 206.31429048055224, 1.0, 0, 422.15801591844024, 0.0, 0 ],
                     "classic_curve": 1,
-                    "domain": 273.00640869140625,
+                    "domain": 423.11700439453125,
                     "id": "obj-11",
                     "maxclass": "function",
                     "numinlets": 1,
@@ -5113,7 +5113,7 @@
                     "numoutlets": 3,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "", "bang", "signal" ],
-                    "patching_rect": [ 1944.0, 199.0, 284.0, 137.0 ],
+                    "patching_rect": [ 1939.7258863449097, 214.63415145874023, 284.0, 137.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 24.0, 34.0, 284.0, 134.0 ],
                     "viewvisibility": 1
@@ -5211,7 +5211,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 213.0, 172.0, 1000.0, 689.0 ],
+                        "rect": [ 595.0, 226.0, 1000.0, 689.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -5465,7 +5465,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 233.0, 306.0, 65.0, 22.0 ],
-                                    "text": "3000 3000"
+                                    "text": "1280 720"
                                 }
                             },
                             {
@@ -5833,7 +5833,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-132", 0 ],
+                    "order": 0,
+                    "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-3", 0 ],
+                    "order": 1,
                     "source": [ "obj-10", 0 ]
                 }
             },
@@ -6351,12 +6359,6 @@
                 "patchline": {
                     "destination": [ "obj-107", 0 ],
                     "source": [ "obj-158", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-132", 0 ],
-                    "source": [ "obj-159", 0 ]
                 }
             },
             {
@@ -8098,6 +8100,14 @@
             "obj-28::obj-5": [ "live.dial[13]", "sensitivity", 0 ],
             "obj-28::obj-56": [ "live.gain~[5]", "live.gain~", 0 ],
             "obj-6": [ "live.gain~", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-16::obj-11::obj-91::obj-10::obj-11": {
                     "parameter_longname": "Jitter[26]"
